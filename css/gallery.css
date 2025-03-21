@@ -20,25 +20,24 @@ body {
 } */
 
 #image {
-    width: 66vh;
-    height: 66vh;
+    width: 66vmin;                          /* минимальное из ширины и высоты экрана */
+    aspect-ratio: 1 / 1;                    /* квадратная форма */;
     border: 5px solid black;
     margin: 0 auto 25px auto;
     background-color: rgb(231, 224, 237);
     background-image: url('');
     background-repeat: no-repeat;
+    background-size: cover;                 /* подгонка изображения под блок */
     background-size: 100%;
     border-radius: 35px;
     color: rgb(0, 0, 0);
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 0.5px #ffffff;
     font-size: 250%;
     font-weight: bold;
-    font-family: cursive, sans-serif;
+    font-family: sans-serif, arial, Helvetica;
     display: flex;
     justify-content: center;
-    /* по центру по горизонтали */
     align-items: flex-end;
-    /* прижимаем вниз по вертикали */
     text-align: center;
 }
 
